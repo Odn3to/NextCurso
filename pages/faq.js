@@ -1,7 +1,9 @@
-import { useEffect, useState} from 'react';
-import Link from '../src/components/Link';
-import Head from 'next/head';
+// import { useEffect, useState} from 'react';
+// import Link from '../src/components/Link';
+// import Head from 'next/head';
+import FAQScreen from '../src/screens/FAQScreen';
 
+export default FAQScreen; 
 
 // export async function getServerSIdeProps() {
 //      console.log('Em modo DEV, sempre roda! A cada acesso')
@@ -26,29 +28,29 @@ export async function getStaticProps() {
     };
   }
 
-export default function FAQPage({faq}) {
-    console.log(faq);
-    //const [faq, setFaq] = useState([]);
-    //useEffect(() => {
-    //},[]);
+// export default function FAQPage({faq}) {
+//     console.log(faq);
+//     //const [faq, setFaq] = useState([]);
+//     //useEffect(() => {
+//     //},[]);
 
-    return (
-        <div>
-            <Head>
-                <title>FAQ - Alura Cases Campanha</title>
-            </Head>
-            <h1>Alura Cases - Páginas de Perguntas FAG</h1>
-            <Link href="/">
-                Ir para a Home
-            </Link>
-            <ul>
-                {faq.map(({ answer, question }) => (
-                    <li key={question}>
-                        <h2>{question}</h2>
-                        <p>{answer}</p>
-                    </li>
-                ))}
-            </ul>
-        </div>
-    )
-}
+//     return (
+//         <div>
+//             <Head>
+//                 <title>FAQ - Alura Cases Campanha</title>
+//             </Head>
+//             <h1>Alura Cases - Páginas de Perguntas FAG</h1>
+//             <Link href="/">
+//                 Ir para a Home
+//             </Link>
+//             <ul>
+//                 {faq.map(({ answer, question }) => (
+//                     <li key={question}>
+//                         <h2>{question}</h2>
+//                         <p>{answer}</p>
+//                     </li>
+//                 ))}
+//             </ul>
+//         </div>
+//     )
+// }
